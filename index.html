@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" class="active" data-page="home">home</a>
+      <a href="manifesto.html" data-page="manifesto">manifesto</a>
+      <a href="contact.html" data-page="contact">contact</a>
+      <a href="waitlist.html" data-page="waitlist" class="nav-cta">join waitlist</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">home</a>
+    <a href="manifesto.html">manifesto</a>
+    <a href="contact.html">contact</a>
+    <a href="waitlist.html" style="color:var(--coral)">→ join waitlist</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow" id="heroEyebrow"></p>
+    <h1 class="hero-headline">
+      <span id="heroWord" class="flip-word" aria-live="polite"></span>
+    </h1>
+    <div class="hero-sub-row">
+      <p class="hero-sub">Less noise.</p>
+      
+    </div>
+  </section>
+
+
+
+  <!-- PILLARS -->
+  <section class="home-section" >
+    <div class="pillars-grid">
+      <div class="pillar">
+        <p class="pillar-body">Every experience is handpicked. We don't do open invites. Heritage is for people who
+          understand that the right room changes everything.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-body">Shared experience is the fastest path to real connection. We put you in rooms with people
+          who push you — creatively, professionally, personally.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-body">We believe who you are is shaped by what you do and who you do it with. Heritage is how
+          you become the person you're trying to be.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITY -->
+  <section class="city-section">
+    <div class="city-text">
+      <div class="city-big">New<br><span class="accent">York</span><br>first.</div>
+      <p class="city-desc">Heritage launches in New York City — the creative capital. Art, music, fashion, food,
+        finance. The most interesting people in the world, all in one place. We're starting here.</p>
+
+    </div>
+  </section>
+
+  <footer>
+    <span class="f-note">© 2025 heritage. all rights reserved.</span>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hero-word.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>manifesto — heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/manifesto.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" data-page="home">home</a>
+      <a href="manifesto.html" class="active" data-page="manifesto">manifesto</a>
+      <a href="contact.html" data-page="contact">contact</a>
+      <a href="waitlist.html" data-page="waitlist" class="nav-cta">join waitlist</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">home</a>
+    <a href="manifesto.html" class="active">manifesto</a>
+    <a href="contact.html">contact</a>
+    <a href="waitlist.html" style="color:var(--coral)">→ join waitlist</a>
+  </div>
+
+  <!-- TYPOGRAPHIC HERO -->
+  <div class="manifesto-hero" style="padding-top: calc(var(--nav-h) + 80px);">
+    <div class="manifesto-lines">
+      <span class="mline black">Your</span>
+      <span class="mline navy ">Gateway</span>
+      <span class="mline gray">To Culture</span>
+    </div>
+  </div>
+
+  <!-- BODY COPY -->
+  <div class="manifesto-body">
+    <div>
+      <p>We built Heritage because we noticed something: the most interesting people we know are lonely in the way that
+        only ambitious, creative people can be lonely. Not for lack of a social life — for lack of the right one.</p>
+      <p>There's a difference between knowing people and being known. Between a full calendar and a full life. Heritage
+        exists in that difference.</p>
+    </div>
+    <div>
+      <p>We're not a networking app. We're not a social media platform. We're not trying to grow a community for the
+        sake of numbers. We're trying to build something rare — a circle of people who make each other better by simply
+        being in the same room.</p>
+
+      <p>Heritage provides access to culturally and personally relevant experiences—connecting aspirational individuals
+        to the right rooms and the right people.</p>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <span class="f-note">© 2025 heritage. all rights reserved.</span>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+
+</html>

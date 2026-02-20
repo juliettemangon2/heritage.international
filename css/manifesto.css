@@ -1,0 +1,52 @@
+/* ─── MANIFESTO ────────────────────────────────── */
+.manifesto-hero {
+  padding: 80px 28px 0;
+  overflow: hidden;
+}
+
+.mline {
+  display: block;
+  font-family: var(--font-display);
+  line-height: 0.9;
+  white-space: nowrap;
+  animation: fadeUp 0.7s ease both;
+}
+
+.mline:nth-child(1) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.05s; }
+.mline:nth-child(2) { font-size: clamp(44px, 8vw,   118px); animation-delay: 0.1s;  }
+.mline:nth-child(3) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.15s; }
+.mline:nth-child(4) { font-size: clamp(44px, 7.5vw, 110px); animation-delay: 0.2s;  }
+.mline:nth-child(5) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.25s; }
+
+.mline.coral  { color: var(--coral); }
+.mline.navy   { color: var(--navy); }
+.mline.mint   { color: var(--mint); }
+.mline.rose   { color: var(--rose); }
+.mline.black  { color: var(--black); }
+.mline.gray   { color: var(--gray); }
+.mline.italic { font-family: var(--font-serif); font-style: italic; }
+
+.manifesto-body {
+  padding: 80px 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 2rem;
+}
+
+.manifesto-body p {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.9;
+}
+.manifesto-body p + p { margin-top: 24px; }
+
+@media (max-width: 900px) {
+  .manifesto-body { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 560px) {
+  .manifesto-hero { padding-left: 20px; padding-right: 20px; }
+  .manifesto-body { padding-left: 20px; padding-right: 20px; }
+}

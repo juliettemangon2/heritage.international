@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>join waitlist — heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/waitlist.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      padding-top: var(--nav-h);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" data-page="home">home</a>
+      <a href="manifesto.html" data-page="manifesto">manifesto</a>
+      <a href="contact.html" data-page="contact">contact</a>
+      <a href="waitlist.html" data-page="waitlist" class="nav-cta active">join waitlist</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">home</a>
+    <a href="manifesto.html">manifesto</a>
+    <a href="contact.html">contact</a>
+    <a href="waitlist.html" style="color:var(--coral)" class="active">→ join waitlist</a>
+  </div>
+
+  <div class="waitlist-wrap">
+    <div class="waitlist-left">
+      <div>
+        <div class="waitlist-big">
+          Get<br>
+          <span class="coral">in</span><br>
+          <span class="navy">the</span><br>
+          room.
+        </div>
+        <p class="waitlist-desc">Heritage is launching in New York City to a curated group of members. Tell us who you
+          are. We'll be in touch.</p>
+
+      </div>
+
+    </div>
+
+    <div class="waitlist-right">
+      <p class="form-label">your information</p>
+      <form id="waitlistForm" onsubmit="submitWaitlist(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>first name *</label>
+            <input name="firstName" type="text" placeholder="—" required />
+          </div>
+          <div class="form-group">
+            <label>last name *</label>
+            <input name="lastName" type="text" placeholder="—" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>email *</label>
+          <input name="email" type="email" placeholder="—" required />
+        </div>
+        <div class="form-group">
+          <label>what do you do</label>
+          <input name="whatDoYouDo" type="text" placeholder="— " />
+        </div>
+        <div class="form-group">
+          <label>instagram </label>
+          <input name="instagram" type="text" placeholder="—" />
+        </div>
+        <div class="form-group">
+          <label>referred by</label>
+          <input name="referredBy" type="text" placeholder="— who sent you?" />
+        </div>
+        <div class="form-group">
+          <label>why heritage</label>
+          <input name="whyHeritage" type="text" placeholder="— why do you want in?" />
+        </div>
+        <button type="submit" class="btn-submit">request access →</button>
+      </form>
+      <div class="form-success" id="waitlistSuccess">
+        you're on the list.<br>we'll be in touch.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+
+</html>

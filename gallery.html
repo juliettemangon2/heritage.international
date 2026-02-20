@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gallery — heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <style>
+    body { padding-top: var(--nav-h); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.html" data-page="home">home</a>
+      <a href="manifesto.html" data-page="manifesto">manifesto</a>
+      <a href="gallery.html" class="active" data-page="gallery">gallery</a>
+      <a href="contact.html" data-page="contact">contact</a>
+      <a href="waitlist.html" data-page="waitlist" class="nav-cta">join waitlist</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="index.html">home</a>
+    <a href="manifesto.html">manifesto</a>
+    <a href="gallery.html" class="active">gallery</a>
+    <a href="contact.html">contact</a>
+    <a href="waitlist.html" style="color:var(--coral)">→ join waitlist</a>
+  </div>
+
+  <div class="gallery-header">
+    <div class="gallery-title">The<br><span class="accent">Archive</span></div>
+  </div>
+
+  <!--
+    TO ADD IMAGES: replace each <div class="gallery-placeholder gp-N">...</div>
+    with: <img src="images/your-photo.jpg" alt="description" />
+    inside the .gallery-item div.
+  -->
+  <div class="gallery-grid">
+    <div class="gallery-item"><div class="gallery-placeholder gp-1"><span class="gallery-placeholder-label">image 01</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-2"><span class="gallery-placeholder-label">image 02</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-3"><span class="gallery-placeholder-label">image 03</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-4"><span class="gallery-placeholder-label">image 04</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-5"><span class="gallery-placeholder-label">image 05</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-6"><span class="gallery-placeholder-label">image 06</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-7"><span class="gallery-placeholder-label">image 07</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-8"><span class="gallery-placeholder-label">image 08</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-9"><span class="gallery-placeholder-label">image 09</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-10"><span class="gallery-placeholder-label">image 10</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-11"><span class="gallery-placeholder-label">image 11</span></div></div>
+    <div class="gallery-item"><div class="gallery-placeholder gp-12"><span class="gallery-placeholder-label">image 12</span></div></div>
+  </div>
+
+  <footer>
+    <span class="f-note">© 2025 heritage. all rights reserved.</span>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

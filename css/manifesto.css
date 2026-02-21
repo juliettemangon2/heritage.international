@@ -4,27 +4,83 @@
   overflow: hidden;
 }
 
+.manifesto-lines {
+  font-size: 30rem;
+}
+
 .mline {
   display: block;
   font-family: var(--font-display);
   line-height: 0.9;
+  letter-spacing: 0rem;
+  font-size: 30rem;
   white-space: nowrap;
   animation: fadeUp 0.7s ease both;
+  font-weight: 600;
 }
 
-.mline:nth-child(1) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.05s; }
-.mline:nth-child(2) { font-size: clamp(44px, 8vw,   118px); animation-delay: 0.1s;  }
-.mline:nth-child(3) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.15s; }
-.mline:nth-child(4) { font-size: clamp(44px, 7.5vw, 110px); animation-delay: 0.2s;  }
-.mline:nth-child(5) { font-size: clamp(52px, 9.5vw, 140px); animation-delay: 0.25s; }
+.mline:nth-child(1) {
+  font-size: clamp(52px, 9.5vw, 140px);
+  animation-delay: 0.05s;
+}
 
-.mline.coral  { color: var(--coral); }
-.mline.navy   { color: var(--navy); }
-.mline.mint   { color: var(--mint); }
-.mline.rose   { color: var(--rose); }
-.mline.black  { color: var(--black); }
-.mline.gray   { color: var(--gray); }
-.mline.italic { font-family: var(--font-serif); font-style: italic; }
+.mline:nth-child(2) {
+  font-size: clamp(44px, 8vw, 118px);
+  animation-delay: 0.1s;
+}
+
+.mline:nth-child(3) {
+  font-size: clamp(52px, 9.5vw, 140px);
+  animation-delay: 0.15s;
+}
+
+.mline:nth-child(4) {
+  font-size: clamp(44px, 7.5vw, 110px);
+  animation-delay: 0.2s;
+}
+
+.mline:nth-child(5) {
+  font-size: clamp(52px, 9.5vw, 140px);
+  animation-delay: 0.25s;
+}
+
+.mline.coral {
+  color: var(--coral);
+}
+
+.mline.navy {
+  color: var(--navy);
+  font-size: 15rem;
+  letter-spacing: -1rem;
+}
+
+.mline.mint {
+  color: var(--mint);
+}
+
+.mline.rose {
+  color: var(--rose);
+}
+
+.mline.black {
+  color: var(--black);
+  font-size: 10rem;
+    letter-spacing: -0.5rem;
+
+}
+
+.mline.gray {
+  margin-top: 1rem;
+  padding-right: 2rem;
+  color: var(--gray);
+  letter-spacing: -0.5rem;
+
+}
+
+.mline.italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
 
 .manifesto-body {
   padding: 80px 28px;
@@ -40,13 +96,26 @@
   font-size: 1.5rem;
   line-height: 1.9;
 }
-.manifesto-body p + p { margin-top: 24px; }
+
+.manifesto-body p+p {
+  margin-top: 24px;
+}
 
 @media (max-width: 900px) {
-  .manifesto-body { grid-template-columns: 1fr; gap: 32px; }
+  .manifesto-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 560px) {
-  .manifesto-hero { padding-left: 20px; padding-right: 20px; }
-  .manifesto-body { padding-left: 20px; padding-right: 20px; }
+  .manifesto-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .manifesto-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

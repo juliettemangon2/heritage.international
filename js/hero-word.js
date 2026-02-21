@@ -162,8 +162,16 @@ const run = async () => {
   await sleep(520);
 
   // Final: flip to heritage in black
-  await flipTo(wordRoot, padded[3], black, { perLetterDelayMs: 16, flipDurationMs: 320 });
+  // Fade out eyebrow as heritage begins
+  if (eyebrow) {
+    eyebrow.classList.add("is-hidden");
+  }
 
+  // Final: flip to heritage in black
+  await flipTo(wordRoot, padded[3], black, {
+    perLetterDelayMs: 16,
+    flipDurationMs: 320
+  });
   const subRow = document.querySelector(".hero-sub-row");
   if (subRow) {
     subRow.classList.add("is-visible");

@@ -9,6 +9,7 @@
 
 :root {
   --coral: #f97969;
+
   --pink: #ffb9b0;
   --rose: #d6829b;
   --blush: #e3b8c5;
@@ -20,9 +21,6 @@
   --gray: #a7a9ac;
   --white: #ffffff;
 
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-serif: 'DM Serif Display', serif;
-  --font-mono: 'Space Mono', monospace;
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --nav-h: 52px;
@@ -68,7 +66,6 @@ nav {
   z-index: 100;
   height: var(--nav-h);
   background: var(--white);
-  border-bottom: 1.5px solid var(--black);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,10 +205,10 @@ footer .f-note {
   background: var(--black);
   color: var(--white);
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 1rem;
+  letter-spacing: 0em;
   text-transform: lowercase;
-  padding: 16px 40px;
+  padding: 1rem;
   border: 1.5px solid var(--black);
   transition: all 0.2s;
   display: inline-block;

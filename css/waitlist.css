@@ -21,6 +21,8 @@
   font-family: var(--font-display);
   font-size: clamp(64px, 9vw, 130px);
   line-height: 0.88;
+  font-weight: 800;
+   letter-spacing: -0.5rem;
 }
 .waitlist-big .coral { color: var(--coral); }
 .waitlist-big .navy  { color: var(--navy); }

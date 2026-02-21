@@ -7,10 +7,13 @@
   font-family: var(--font-display);
   font-size: clamp(60px, 11vw, 160px);
   line-height: 0.88;
+  font-weight: 500;
+   letter-spacing: -0.5rem;
 }
 
 .contact-title .coral {
   color: var(--navy);
+  padding-left: 2rem;
 }
 
 .contact-grid {

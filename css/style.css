@@ -13,7 +13,7 @@
   --pink: #ffb9b0;
   --rose: #d6829b;
   --blush: #e3b8c5;
-  --mint: #43bf98;
+  --mint: #53ad90;
   --seafoam: #a8f0d9;
   --navy: #2d4e91;
   --periwinkle: #a1baed;
@@ -191,7 +191,7 @@ footer {
 footer .f-note {
   font-family: var(--font-body);
   font-size: 1rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0em;
   text-transform: lowercase;
   color: var(--black);
   text-align: center;

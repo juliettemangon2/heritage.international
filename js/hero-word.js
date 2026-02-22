@@ -142,7 +142,7 @@ const run = async () => {
   const rootStyles = getComputedStyle(document.documentElement);
   const navy = rootStyles.getPropertyValue("--navy").trim();
   const rose = rootStyles.getPropertyValue("--rose").trim();
-  const peri = rootStyles.getPropertyValue("--periwinkle").trim();
+  const peri = rootStyles.getPropertyValue("--mint").trim();
   const black = rootStyles.getPropertyValue("--black").trim();
 
   // Type eyebrow

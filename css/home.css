@@ -229,6 +229,11 @@ footer {
     font-size: 11vw;
   }
 
+  .hero-sub-row {
+    margin-top: 0.25rem;
+    padding-top: 8px;
+  }
+
   .home-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -241,6 +246,7 @@ footer {
   .hero-eyebrow{
     letter-spacing: 0rem;
   }
+  
 }
 
 /* ─── HERO FLIP WORD ───────────────────────────── */

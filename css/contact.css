@@ -1,3 +1,13 @@
+footer {
+  border-top: 3px solid var(--light-mint);
+
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--mint);
+}
+
 /* ─── CONTACT ──────────────────────────────────── */
 .contact-hero {
   padding: 80px 28px 60px;
@@ -5,26 +15,27 @@
 
 .contact-title {
   font-family: var(--font-display);
-  font-size: clamp(80px, 12vw, 180px);
+  font-size: 12rem;
   line-height: 0.88;
   font-weight: 500;
-   letter-spacing: -0.3rem;
+  letter-spacing: -0.3rem;
+  color: var(--mint);
+
+
 }
 
 .contact-title .coral {
-  color: var(--navy);
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top: 1.5px solid var(--black);
 }
 
 .contact-col {
   padding: 48px 32px;
-  border-right: 1.5px solid var(--black);
+  border-right: 3px solid var(--light-mint);
 }
 
 .contact-col:last-child {
@@ -36,7 +47,7 @@
   font-size: 1rem;
   letter-spacing: 0em;
   text-transform: lowercase;
-  color: var(--black);
+  color: var(--dark-gray);
   margin-bottom: 20px;
 }
 
@@ -63,13 +74,14 @@
 
 .contact-form {
   max-width: 640px;
-  color: var(--black);
+  color: var(--light-mint);
 }
 
-label{
-  color: var(--black);
+label {
+  color: var(--light-mint);
 
 }
+
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -77,7 +89,7 @@ label{
 
   .contact-col {
     border-right: none;
-    border-bottom: 1.5px solid var(--black);
+    border-bottom: 1.5px solid var(--light-mint);
   }
 
   .contact-col:last-child {

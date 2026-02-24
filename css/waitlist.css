@@ -1,3 +1,7 @@
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--navy);
+}
 /* ─── WAITLIST ─────────────────────────────────── */
 .waitlist-wrap {
   min-height: calc(100vh - var(--nav-h));
@@ -11,7 +15,7 @@
 
 .waitlist-left {
   padding: 80px 48px;
-  border-right: 1.5px solid var(--black);
+  border-right: 1.5px solid var(--dark-gray);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +53,7 @@
   letter-spacing: 0.1em;
   text-transform: lowercase;
   padding: 6px 14px;
-  border: 1.5px solid var(--black);
+  border: 1.5px solid var(--dark-gray);
 }
 
 .waitlist-right {
@@ -64,7 +68,7 @@
   font-size: 1rem;
   letter-spacing: 0em;
   text-transform: lowercase;
-  color: var(--black);
+  color: var(--dark-gray);
   margin-bottom: 40px;
 }
 
@@ -79,7 +83,7 @@
 
 @media (max-width: 900px) {
   .waitlist-wrap { grid-template-columns: 1fr; }
-  .waitlist-left { border-right: none; border-bottom: 1.5px solid var(--black); padding: 48px 28px; }
+  .waitlist-left { border-right: none; border-bottom: 1.5px solid var(--dark-gray); padding: 48px 28px; }
   .waitlist-right { padding: 48px 28px; }
   .waitlist-big { font-size: clamp(52px, 13vw, 90px); }
 }

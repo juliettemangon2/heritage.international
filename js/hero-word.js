@@ -140,10 +140,10 @@ const run = async () => {
 
   // Pull your CSS vars so colors stay centralized in CSS
   const rootStyles = getComputedStyle(document.documentElement);
-  const navy = rootStyles.getPropertyValue("--navy").trim();
+  const navy = rootStyles.getPropertyValue("--rose").trim();
   const rose = rootStyles.getPropertyValue("--rose").trim();
-  const peri = rootStyles.getPropertyValue("--mint").trim();
-  const black = rootStyles.getPropertyValue("--black").trim();
+  const peri = rootStyles.getPropertyValue("--rose").trim();
+  const black = rootStyles.getPropertyValue("--rose").trim();
 
   // Type eyebrow
   await typeText(eyebrow, "i want to be", { speedMs: 45 });

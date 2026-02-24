@@ -9,16 +9,15 @@
 
 :root {
   --coral: #f97969;
-
-  --pink: #ffb9b0;
+  --light-coral: #ffb9b0;
   --rose: #d6829b;
-  --blush: #e3b8c5;
-  --mint: #53ad90;
-  --seafoam: #a8f0d9;
-  --navy: #2d4e91;
-  --periwinkle: #a1baed;
-  --black: #000000;
-  --gray: #a7a9ac;
+  --light-rose: #e3b8c5;
+  --mint: #43bf98;
+  --light-mint: #a8f0d9;
+  --dark-blue: #2d4e91;
+  --light-blue: #a1baed;
+  --dark-gray: #414042;
+  --light-gray: #a7a9ac;
   --white: #ffffff;
 
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -31,13 +30,15 @@ html {
 }
 
 body {
-  background: var(--white);
-  color: var(--black);
   font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.5;
   overflow-x: hidden;
 }
+body {
+  background: var(--white);
+  color: var(--dark-gray);
+} 
 
 a {
   color: inherit;
@@ -73,13 +74,14 @@ nav {
   padding-right: 1rem;
 }
 
+
 .nav-logo {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 0em;
   text-transform: lowercase;
-  color: var(--black);
+  color: var(--dark-gray);
   cursor: pointer;
 }
 
@@ -97,15 +99,11 @@ nav {
   font-size: 1.5rem;
   letter-spacing: 0em;
   text-transform: lowercase;
-  color: var(--black);
   transition: color 0.2s;
 
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--navy);
-}
+
 
 .nav-links a.nav-cta {
   background: var(--navy);
@@ -116,7 +114,7 @@ nav {
 }
 
 .nav-links a.nav-cta:hover {
-  background: var(--black);
+  background: var(--dark-gray);
   color: var(--white);
 }
 
@@ -132,7 +130,7 @@ nav {
 .nav-hamburger span {
   display: block;
   height: 1.5px;
-  background: var(--black);
+  background: var(--dark-gray);
   transition: all 0.3s;
 }
 
@@ -155,7 +153,7 @@ nav {
   left: 0;
   right: 0;
   background: var(--white);
-  border-bottom: 1.5px solid var(--black);
+  border-bottom: 1.5px solid var(--dark-gray);
   z-index: 99;
   padding: 24px 28px;
   flex-direction: column;
@@ -171,7 +169,7 @@ nav {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: lowercase;
-  color: var(--black);
+  color: var(--dark-gray);
 }
 
 .nav-mobile-menu a.active {
@@ -180,7 +178,6 @@ nav {
 
 /* ─── SHARED ────────────────────────────────────── */
 footer {
-  border-top: 1.5px solid var(--black);
   padding: 28px;
   display: flex;
   align-items: center;
@@ -193,7 +190,6 @@ footer .f-note {
   font-size: 1rem;
   letter-spacing: 0em;
   text-transform: lowercase;
-  color: var(--black);
   text-align: center;
   align-items: center;
 }
@@ -202,14 +198,14 @@ footer .f-note {
 
 .btn-submit {
   margin-top: 40px;
-  background: var(--black);
+  background: var(--dark-gray);
   color: var(--white);
   font-family: var(--font-mono);
   font-size: 1rem;
   letter-spacing: 0em;
   text-transform: lowercase;
   padding: 1rem;
-  border: 1.5px solid var(--black);
+  border: 1.5px solid var(--dark-gray);
   transition: all 0.2s;
   display: inline-block;
   cursor: pointer;
@@ -240,7 +236,7 @@ footer .f-note {
   font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: lowercase;
-  color: var(--black);
+  color: var(--dark-gray);
   margin-bottom: 8px;
 }
 
@@ -249,13 +245,13 @@ footer .f-note {
 .form-group textarea {
   width: 100%;
   border: none;
-  border-bottom: 1.5px solid var(--black);
+  border-bottom: 1.5px solid var(--dark-gray);
   padding: 10px 0;
   font-family: var(--font-body);
   font-size: 15px;
   font-weight: 300;
   background: transparent;
-  color: var(--black);
+  color: var(--dark-gray);
   outline: none;
   transition: border-color 0.2s;
   -webkit-appearance: none;

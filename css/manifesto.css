@@ -1,3 +1,19 @@
+
+
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--dark-blue);
+}
+footer .f-note {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0em;
+  text-transform: lowercase;
+  text-align: center;
+  align-items: center;
+}
+
 /* ─── MANIFESTO ────────────────────────────────── */
 .manifesto-hero {
   padding: 80px 28px 0;
@@ -12,6 +28,7 @@
   display: block;
   font-family: var(--font-display);
   line-height: 0.9;
+  color: var(--light-blue);
   letter-spacing: 0rem;
   font-size: 30rem;
   white-space: nowrap;
@@ -44,44 +61,24 @@
   animation-delay: 0.25s;
 }
 
-.mline.coral {
-  color: var(--coral);
-}
+
 
 .mline.navy {
-  color: var(--navy);
+  color: var(--dark-blue);
   font-size: 15rem;
   letter-spacing: -1rem;
 }
 
-.mline.mint {
-  color: var(--mint);
-}
-
-.mline.rose {
-  color: var(--rose);
-}
-
-.mline.black {
-  color: var(--black);
-  font-size: 10rem;
-    letter-spacing: -0.5rem;
-
-}
-
-.mline.gray {
-  margin-top: 1rem;
-  padding-right: 2rem;
-  color: var(--gray);
-  letter-spacing: -0.5rem;
-
-}
 
 .mline.italic {
   font-family: var(--font-serif);
   font-style: italic;
 }
 
+footer {
+    border-top: 5px solid var(--dark-blue);
+
+}
 .manifesto-body {
   padding: 80px 28px;
   display: grid;

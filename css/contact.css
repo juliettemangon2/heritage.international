@@ -38,6 +38,9 @@ footer {
   border-right: 3px solid var(--light-mint);
 }
 
+.nav-mobile-menu a.active {
+  color: var(--mint);
+}
 .contact-col:last-child {
   border-right: none;
 }
@@ -89,7 +92,7 @@ label {
 
   .contact-col {
     border-right: none;
-    border-bottom: 1.5px solid var(--light-mint);
+    border-bottom: 3px solid var(--light-mint);
   }
 
   .contact-col:last-child {
@@ -97,7 +100,7 @@ label {
   }
 
   .contact-title {
-    font-size: clamp(52px, 13vw, 90px);
+    font-size: clamp(60px, 15vw, 100px);
   }
 }
 
@@ -110,5 +113,9 @@ label {
   .contact-bottom {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .contact-title .coral {
+    padding-left: 1rem;
   }
 }

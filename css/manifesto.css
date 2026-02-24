@@ -65,10 +65,13 @@ footer .f-note {
 
 .mline.navy {
   color: var(--dark-blue);
-  font-size: 15rem;
-  letter-spacing: -1rem;
+  font-size: clamp(2.5rem, 15vw, 15rem);
+  letter-spacing: clamp(-0.15rem, -0.7vw, -1rem);
 }
 
+.nav-mobile-menu a.active {
+  color: var(--dark-blue);
+}
 
 .mline.italic {
   font-family: var(--font-serif);
@@ -90,7 +93,7 @@ footer {
 .manifesto-body p {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.5rem);
   line-height: 1.9;
 }
 

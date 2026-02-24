@@ -19,7 +19,7 @@
 .hero-eyebrow {
   color: var(--light-rose);
   font-family: var(--font-body);
-  font-size: 6rem;
+  font-size: clamp(2rem, 8vw, 6rem);
   letter-spacing: -0.2rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -34,6 +34,9 @@
   animation: none;
 }
 
+.nav-mobile-menu a.active {
+  color: var(--rose);
+}
 
 
 .hero-headline {
@@ -71,7 +74,7 @@
   font-family: var(--font-body);
   font-weight: 500;
   color: var(--dark-gray);
-  font-size: 2rem;
+  font-size: clamp(1.1rem, 3.5vw, 2rem);
   max-width: 360px;
   line-height: 1.6;
 }
@@ -132,7 +135,7 @@ footer {
   color: var(--dark-gray);
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: clamp(1rem, 3.2vw, 2rem);
   line-height: 1.7;
 }
 
@@ -165,7 +168,7 @@ footer {
 .city-desc {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: clamp(1rem, 3.5vw, 2rem);
   line-height: 1.8;
   text-align: left;
   max-width: 800px;
@@ -222,6 +225,10 @@ footer {
     padding: 40px 20px 0;
   }
 
+  .hero-headline {
+    font-size: 11vw;
+  }
+
   .home-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -230,6 +237,9 @@ footer {
   .city-section {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .hero-eyebrow{
+    letter-spacing: 0rem;
   }
 }
 

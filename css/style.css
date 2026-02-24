@@ -166,15 +166,14 @@ nav {
 
 .nav-mobile-menu a {
   font-family: var(--font-body);
-  font-size: 12px;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0em;
   text-transform: lowercase;
   color: var(--dark-gray);
+  font-weight: 500;
 }
 
-.nav-mobile-menu a.active {
-  color: var(--navy);
-}
+
 
 /* ─── SHARED ────────────────────────────────────── */
 footer {
